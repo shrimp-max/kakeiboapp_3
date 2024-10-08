@@ -10,12 +10,12 @@
 
 ## ③DEMO
 
-https://ebitaku.sakura.ne.jp/kakeiboapp_2/index.php
+https://ebitaku.sakura.ne.jp/kakeiboapp_3/index.php
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
-ID：yamadataro
-Pwd：yamadataro
+ID：test1
+Pwd：test1
 
 ## ⑤工夫した点・こだわった点
 
@@ -23,6 +23,8 @@ Pwd：yamadataro
 - 収支一覧表の、収入と支出を一目見てわかるように色を付けた
 - 1つの画面で、更新と削除のどちらもできるようにした
 - 誤削除を防ぐために、ダイアログを挟むようにした。
+- 10/8追記
+- ログイン画面をtailwindを使用して、よりwebアプリっぽいデザインに変更した
 
 ## ⑥難しかった点・次回トライしたいこと(又は機能)
 

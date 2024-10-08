@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="css/main.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<style>div{padding: 10px;font-size:16px;}</style>
-<title>ログイン</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>ログイン</title>
 </head>
-<body>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
 
-<header>
-  <nav class="navbar navbar-default">LOGIN</nav>
-</header>
+  <div class="w-full max-w-xs mx-auto">
+    <form name="form1" action="login_act.php" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <h2 class="text-2xl font-bold text-center mb-6">ログイン</h2>
 
-<!-- lLOGINogin_act.php は認証処理用のPHPです。 -->
-<form name="form1" action="login_act.php" method="post">
-  <div class="form-group">
-    <label for="" class="mt-3">ID:</label>
-    <input type="text" name="lid" class="form-control">
-    <label for="" class="mt-3">PW:</label>
-    <input type="password" name="lpw" class="form-control col-xs-2">
-    <button type="submit" class="btn btn-primary mt-3">ログイン</button>
+      <div class="mb-4">
+        <label for="lid" class="block text-gray-700 text-sm font-bold mb-2">ID:</label>
+        <input type="text" name="lid" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="IDを入力">
+      </div>
 
-    <!-- <input type="submit" value="ログイン"> -->
+      <div class="mb-6">
+        <label for="lpw" class="block text-gray-700 text-sm font-bold mb-2">PW:</label>
+        <input type="password" name="lpw" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" placeholder="パスワードを入力">
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          ログイン
+        </button>
+      </div>
+    </form>
+
+    <div class="text-center">
+      <a href="user.php" class="text-blue-500 hover:text-blue-700">新規ユーザー登録はこちら</a>
+    </div>
   </div>
-</form>
 
-<div><a href="user.php">新規ユーザー登録はこちら</a></div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
